@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class tiitle : MonoBehaviour
 
 {
     float count = 0.0f;
     float timeLimit = 2.5f;
-
+    TextImput script;
+    GameObject PROGRAM;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        PROGRAM = GameObject.Find("PROGRAM");
+        script = PROGRAM.GetComponent<TextImput>();
         //CanvasGroup CG = this.GetComponent<CanvasGroup>();
 
     }
@@ -26,6 +29,13 @@ public class tiitle : MonoBehaviour
         {
             //CG.alpha = 0;
             this.GetComponent<CanvasGroup>().alpha = 0;
+        }
+
+        if (script.pattern == "3")
+        {
+            this.GetComponent<CanvasGroup>().alpha = 1;
+
+            SceneManager.LoadScene("Game");
         }
     }
 }

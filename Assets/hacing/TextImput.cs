@@ -26,7 +26,7 @@ public class TextImput : MonoBehaviour
         "	CMP	AL,LOW OFFSET $STEP",};
 
     string KeyBoard_Input = "Normal";
-    string pattern = "1";
+    public string pattern = "1";
     public string DebugConsoleERROR;
     string program;
     int TextSpeedTime = 0;
@@ -56,8 +56,7 @@ public class TextImput : MonoBehaviour
             {
                 umakuittaka();
                 DebugConsoleERROR = "UNLOCKED";
-
-                pattern = "1";
+                pattern = "3";
             }
             else
             {

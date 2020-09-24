@@ -5,18 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class bunnkitenn_scene : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision)
-    {
-
-        Debug.Log(collision.gameObject.name);
-        Debug.Log("hureta");
-
-        if (collision.gameObject.name == "iv")
-        {
-            ChangeScene();
-            Debug.Log("OK");
-        }
-    }
 
     private void OnTriggerEnter(Collider other)
     {

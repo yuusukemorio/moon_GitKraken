@@ -2373,4 +2373,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e600b06fda7d4d4a80d6fd7b5b5a73f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pattern: 1
   DebugConsoleERROR: 
