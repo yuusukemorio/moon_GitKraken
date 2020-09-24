@@ -22,10 +22,6 @@ public class textDisplay : MonoBehaviour
         {
             textNumber = textNumber + 1;
 
-            StartCoroutine(DelayMethod(3.5f, () =>
-            {
-                Debug.Log("Delay call");
-            }));
         }
     }
 }
