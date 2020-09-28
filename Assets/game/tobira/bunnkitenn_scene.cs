@@ -9,12 +9,10 @@ public class bunnkitenn_scene : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject.name);
-        Debug.Log("hureta");
 
         if (other.gameObject.name == "iv")
         {
             ChangeScene();
-            Debug.Log("OK");
         }
     }
 
